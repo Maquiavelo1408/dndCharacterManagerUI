@@ -1,3 +1,31 @@
-<p>
-  home works!
-</p>
+<div class="app mat-typography" [dir]="dir" [ngClass]="{'app-dark': dark, 'boxed': boxed, 'collapsed-sidebar': collapseSidebar, 'compact-sidebar': compactSidebar, 'side-panel-opened': sidePanelOpened, 'side-panel-closed': !sidePanelOpened }">
+  <mat-toolbar class="main-header" color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+      <div class="branding" fxLayout="column" fxLayoutWrap="wrap" fxLayoutAlign="center center" fxShow fxFlex="0 0 125px">
+          <div class="logo"></div>
+          <small>
+            <strong>Dnd Manager Character</strong>
+          </small>
+        </div>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+      <p>Hi</p>
+      <mat-nav-list class="navigation">
+        <mat-list-item fxLayoutAlign="center center">
+          <a class="relative">
+            <span>Character</span>
+            <span fxFlex></span>
+          </a>
+        </mat-list-item>
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <p>Hi</p>
+        <div>
+            <router-outlet></router-outlet>
+          </div>
+    </mat-sidenav-content>
+    
+  </mat-sidenav-container>
+</div>

@@ -1,0 +1,159 @@
+// @import "./custom-kendo/variables";
+// @import "./custom-kendo/all";
+@import "~@progress/kendo-theme-material/scss/all";
+
+@import "scss/material.variables";
+@import "scss/material.themes";
+@import "scss/mixins/bi-app/bi-app-ltr";
+// Core Variables and Mixins
+@import "scss/app.variables";
+@import "scss/mixins";
+// Core Styles
+@import "scss/core";
+@import "scss/material";
+@import "scss/utilities/utilities";
+
+/* Aqui se pondran clases globales que se aplican en varias secciones del sistema */
+
+.item-submenu-3 {
+  cursor: pointer;
+  border: 1px solid #c9c9c9;
+  margin: 10px;
+  height: 100px;
+  padding: 1px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-header-section {
+  span {
+    cursor: pointer;
+  }
+  color: #3f51b5;
+  margin: 20px 10px;
+}
+
+.section-options {
+  margin-bottom: 20px;
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+
+.mat-tab-label.mat-tab-label-active{
+  background-color: #C5CAE9;
+  box-shadow: 0 16px 26px -10px #3F51B5, 0 4px 25px 0px rgba(63, 81, 181, 0.92), 0 8px 10px -5px #3F51B5;
+}
+
+.form-tab-group {
+  border: 1px solid #e8e8e8;
+}
+
+.form-tab-content {
+  padding: 16px;
+  min-height: 200px;
+}
+
+.error-alert {
+  background-color: red;
+}
+
+mat-form-field, mat-input-container {
+  width: 201px;
+  max-width: 500px;
+}
+
+mat-checkbox {
+  width: 201px;
+  display: flex;
+}
+
+mat-select, mat-option {
+  width: 100%;
+  max-width: 500px;
+}
+
+.k-grid td {
+  font-size: 12px;
+  padding: 2px 4px;
+}
+
+.wrapper-limit-content {
+  overflow-y: auto;
+  margin-top: 10px;
+  height: calc(100vh - 270px);
+  @extend .scrollbar-prop;
+}
+
+.scrollbar-prop{
+  /* Let's get this party started */
+  &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: #999;
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+  	background: #999;
+  }
+}
+
+.wrapper-limit-content-variable {
+  overflow-y: auto;
+  margin-top: 10px;
+  @extend .scrollbar-prop;
+}
+
+fieldset.standard {
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(193, 193, 193, 0.18);
+}
+
+.mat-checkbox-layout {
+  align-items: center !important;
+}
+
+
+kendo-grid-toolbar.k-header.k-grid-toolbar.ng-star-inserted {
+  background-color: #444;
+}
+
+span.k-column-resizer {
+  width: 0.5px;
+  background-color: gray;
+}
+
+.k-grid-header.ng-star-inserted {
+  background-color: lightgray;
+}
+
+.k-grid th, .k-grid td{
+  padding: 1px !important;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.k-grid-edit-row > td > .k-textbox, .k-grid-edit-row > td > .k-textarea, .k-grid-edit-row > td > .k-autocomplete, .k-grid-edit-row > td > .k-dateinput-wrap, .k-grid-edit-row > td > .k-dropdown-wrap, .k-grid-edit-row > td > .k-picker-wrap, .k-grid-edit-row > td > .k-multiselect-wrap, .k-grid-edit-row > td > .k-numerictextbox > .k-numeric-wrap {
+  font-size: 15px;
+}
+
+.k-grid-edit-row > td > .k-textbox, .k-grid-edit-row > td > .k-input.k-textbox, .k-grid-edit-row > td > .k-textarea, .k-grid-edit-row > td > .k-widget {
+  background-color: white;
+  margin-left: 0px;
+}
